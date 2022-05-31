@@ -16,15 +16,15 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.menu = [
-      { name: '' },
-      { name: '' },
-      { name: ''},
-      { name: '' },
+      { name: 'Comprar cripto' },
+      { name: 'Mercados' },
+      { name: 'Trading' },
+      { name: 'Derivados' },
     ]
 
     this.options = [
-      { name: 'INICIO' },
-      { name: '' }
+      { name: 'Billetera' },
+      { name: 'EUR' }
     ]
   }
 }
