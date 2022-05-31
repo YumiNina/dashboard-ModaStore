@@ -1,0 +1,67 @@
+<!-- Section HEADER ----->
+<section class="header">
+  <ul>
+    <li class="logo-text"><i class=" "></i> #MODA STORE</li>
+    <li *ngFor="let link of menu">
+      <span class="link">
+        <span class="icon" [innerHTML]="link?.icon"></span>
+        <span>{{link.name}}</span>
+        <!-- <i class="uil uil-bitcoin-circle"></i> -->
+      </span>
+    </li>
+  </ul>
+
+  <ul>
+    <li *ngFor="let link of options">
+      <span class="link">
+        <span class="icon" [innerHTML]="link?.icon"></span>
+        <span>{{link.name}}</span>
+        <!-- <i class="uil uil-bitcoin-circle"></i> -->
+      </span>
+    </li>
+  </ul>
+</section>
+
+
+<!-- Section Alert-->
+<section class="alert-zone">
+  GRAFICO DE CANTIDAD DE ROPA VENDIDA SEGUN LOS AÑOS DE LA TIENDA
+</section>
+
+
+
+<!-- Section Sub Header-->
+<section class="sub-header wrapper-main">
+  <div class="wrapper-sub-header">
+    <div class="block block-1">
+
+   </div>
+  </div>
+  <div class="wrapper-sub-header">
+    <div class="block block-1">
+
+    </div>
+    <div class="block block-2">
+
+
+    </div>
+    <div class="block block-3">
+
+
+    </div>
+  </div>
+  <!-- <div class="wrapper-sub-header video-link">
+    <i class="uil uil-youtube"></i> Tutorial Video
+  </div> -->
+</section>
+
+<!-- Section CHART-->
+<section class="wrapper-main row">
+
+  <app-list-section [coin]="'BTC'" class="col-2"></app-list-section>
+
+  <app-chart-section class="col-10"></app-chart-section>
+
+  <app-list-section [coin]="'ETH'" class="col-2"></app-list-section>
+
+</section>
